@@ -1,0 +1,128 @@
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sample_dbg...done.
+(gdb) b 15
+Breakpoint 1 at 0x610: file sample.c, line 15.
+(gdb) b 49
+Breakpoint 2 at 0x675: file sample.c, line 49.
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000000610 in main at sample.c:15
+2       breakpoint     keep y   0x0000000000000675 in error_with_code at sample.c:49
+(gdb) r
+Starting program: /home/km/KM_GITLAB/kmmt01esd22/GNU/gdb/sample_dbg 
+
+Breakpoint 1, main () at sample.c:15
+15		for (i = 0; i < 10; i++) {
+(gdb) p Arg_1
+$1 = 20
+(gdb) p Arg_2
+$2 = 40
+(gdb) s
+16			if (Arg_1 > Arg_2)
+(gdb) s
+19				Arg_1 = Sum_it (Arg_1, Arg_2);
+(gdb) s
+Sum_it (a=20, b=40) at sample.c:33
+33		return a+b;
+(gdb) p Arg_1
+No symbol "Arg_1" in current context.
+(gdb) s
+34	} /* End of Sum_it */
+(gdb) p Arg_1
+No symbol "Arg_1" in current context.
+(gdb) s
+main () at sample.c:15
+15		for (i = 0; i < 10; i++) {
+(gdb) p Arg_1
+$3 = 60
+(gdb) s
+16			if (Arg_1 > Arg_2)
+(gdb) s
+17				Arg_2 = Sum_it (Arg_1, Arg_2);
+(gdb) s
+Sum_it (a=60, b=40) at sample.c:33
+33		return a+b;
+(gdb) s
+34	} /* End of Sum_it */
+(gdb) s
+main () at sample.c:15
+15		for (i = 0; i < 10; i++) {
+(gdb) p Arg_2
+$4 = 100
+(gdb) n
+16			if (Arg_1 > Arg_2)
+(gdb) n
+19				Arg_1 = Sum_it (Arg_1, Arg_2);
+(gdb) n
+15		for (i = 0; i < 10; i++) {
+(gdb) p Arg_1
+$5 = 160
+(gdb) p Arg_2
+$6 = 100
+(gdb) f
+#0  main () at sample.c:15
+15		for (i = 0; i < 10; i++) {
+(gdb) p Arg_1
+$7 = 160
+(gdb) p Arg_2
+$8 = 100
+(gdb) c
+Continuing.
+
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sample_dbg...done.
+(gdb) b 49
+Breakpoint 1 at 0x675: file sample.c, line 49.
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000000675 in error_with_code at sample.c:49
+(gdb) r
+Starting program: /home/km/KM_GITLAB/kmmt01esd22/GNU/gdb/sample_dbg 
+
+Breakpoint 1, error_with_code () at sample.c:49
+49		divide_value = Change_Value;
+(gdb) s
+50		result = 10 / divide_value;
+(gdb) p divide_value 
+$1 = 0
+(gdb) p divide_value=10
+$2 = 10
+(gdb) p divide_value
+$3 = 10
+(gdb) s
+51		return ;
+(gdb) Quit
+(gdb) Quit
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 2855] will be killed.
+
+Quit anyway? (y or n) y
+

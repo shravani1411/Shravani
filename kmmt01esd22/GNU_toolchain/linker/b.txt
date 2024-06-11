@@ -1,0 +1,6 @@
+0000000000000000 T fun
+                 U _GLOBAL_OFFSET_TABLE_
+                 U printf
+                 U puts
+                 U y
+

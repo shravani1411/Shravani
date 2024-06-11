@@ -1,0 +1,46 @@
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./biggest_dbg...done.
+(gdb) b 6
+Breakpoint 1 at 0x781: file 3_biggest.c, line 6.
+(gdb) b 26
+Breakpoint 2 at 0x845: file 3_biggest.c, line 26.
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000000781 in main at 3_biggest.c:6
+2       breakpoint     keep y   0x0000000000000845 in biggest at 3_biggest.c:26
+(gdb) r
+Starting program: /home/km/KM_GITLAB/kmmt01esd22/GNU/gdb/biggest_dbg 
+
+Breakpoint 1, main () at 3_biggest.c:6
+warning: Source file is more recent than executable.
+6		printf("enter n value:\n");
+(gdb) c
+Continuing.
+enter n value:
+3
+enter values:
+5
+8
+9
+
+Breakpoint 2, biggest (a=9, n=3) at 3_biggest.c:26
+26		printf("biggest value is %d\n",b);
+(gdb) c
+Continuing.
+biggest value is 9
+[Inferior 1 (process 2415) exited normally]
+(gdb) quit
+

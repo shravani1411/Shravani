@@ -1,0 +1,9 @@
+0000000000000000 b a
+                 U fun
+0000000000000021 t fun1
+                 U _GLOBAL_OFFSET_TABLE_
+0000000000000000 T main
+                 U printf
+                 U puts
+0000000000000004 C y
+

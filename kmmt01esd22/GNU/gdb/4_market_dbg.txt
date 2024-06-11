@@ -1,0 +1,68 @@
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./supermarket...done.
+(gdb) b 19
+Breakpoint 1 at 0x7e2: file 4_supermarket.c, line 19.
+(gdb) b 43
+Breakpoint 2 at 0x89b: file 4_supermarket.c, line 43.
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00000000000007e2 in main at 4_supermarket.c:19
+2       breakpoint     keep y   0x000000000000089b in main at 4_supermarket.c:43
+(gdb) r
+Starting program: /home/km/KM_GITLAB/kmmt01esd06/GNU_toolchain/GDB/supermarket 
+Enter stock:
+2000
+Enter limit:
+2500
+
+Breakpoint 1, main () at 4_supermarket.c:19
+warning: Source file is more recent than executable.
+19				j=0;
+(gdb) s
+11		while(j==1){
+(gdb) s
+27		j=1;
+(gdb) s
+28		while(j==1)
+(gdb) s
+31			printf("Enter 1)stock 2)sale 3)purchase 4)quit:\n");
+(gdb) c
+Continuing.
+Enter 1)stock 2)sale 3)purchase 4)quit:
+1
+The total stock is:2000
+Enter 1)stock 2)sale 3)purchase 4)quit:
+2
+Enter number of items for selling:
+300
+Available stock:1700
+Enter 1)stock 2)sale 3)purchase 4)quit:
+3
+Enter number of items:
+900
+Sorry,Place  is not available:
+Enter 1)stock 2)sale 3)purchase 4)quit:
+4
+
+Breakpoint 2, main () at 4_supermarket.c:50
+50	}
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 4761] will be killed.
+
+Quit anyway? (y or n) y
+

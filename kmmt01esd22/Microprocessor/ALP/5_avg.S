@@ -1,0 +1,18 @@
+/*To perform average of 5 no.s*/
+
+LXI H 4000h
+MVI C 05h
+MVI A 00h
+LABEL1: ADD M
+INX H
+DCR C
+JNZ LABEL1
+MVI D 00h
+MVI B 05h
+LABEL2: INR D
+SUB B
+JNZ LABEL2
+MOV A D
+STA 4005h
+HLT
+

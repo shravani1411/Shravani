@@ -1,0 +1,13 @@
+/*To find odd or even no.*/
+
+LDA 4000
+MVI B 01H
+ANA B
+JZ
+MVI A 11H
+STA 6000
+HLT
+MVI A 22H
+STA 6000H
+HLT
+
