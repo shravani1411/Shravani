@@ -1,3 +1,5 @@
+//5) Read a number and print its magnitude (only number without sign)
+
 #include<stdio.h>
 int main()
 {

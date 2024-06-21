@@ -1,3 +1,5 @@
+//7)Read 4 numbers and print which of them is biggest.
+
 #include<stdio.h>
 int main()
 {
