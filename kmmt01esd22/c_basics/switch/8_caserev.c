@@ -1,4 +1,4 @@
-/* Input an alphabet. Output its case reverse.*/
+/*8. Input an alphabet. Output its case reverse.*/
 
 #include<stdio.h>
 int main()

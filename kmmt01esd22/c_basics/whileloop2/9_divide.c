@@ -1,4 +1,4 @@
-/*Write a program to divide and print the quotient and reminder without using / and % operators.*/
+/*9. Write a program to divide and print the quotient and reminder without using / and % operators.*/
 
 #include<stdio.h>
 int main()

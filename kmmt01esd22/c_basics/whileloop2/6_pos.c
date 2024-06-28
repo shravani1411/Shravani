@@ -1,4 +1,4 @@
-/*read n positive numbers from the user and find their sum. If user enters negative number, it should not be counted or added.*/
+/*6. read n positive numbers from the user and find their sum. If user enters negative number, it should not be counted or added.*/
 
 #include<stdio.h>
 int main()
@@ -9,16 +9,14 @@ int main()
 	{		
 		scanf("%d",&v);
 		if(v<0)
-printf("enter positive number:\n");
-		
+			printf("enter positive number:\n");
+
 		else if(v>0)
 		{
 			sum=sum+v;
-}
-			else
-f=0;
-		
+		}
+		else
+			f=0;
 	}
 	printf("Sum of all input numbers : %d\n",sum);
-	
 }

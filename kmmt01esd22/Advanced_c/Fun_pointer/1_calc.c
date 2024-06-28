@@ -39,11 +39,11 @@ int main()
 	int (*p) (int ,int );
 	if(c=='+'){
 		p=add;
-		printf("Addition:%d\n",p(x,y));
+		printf("Addition:%d\n",(*p)(x,y));
 	}
 	else if(c=='-'){
 		p=&sub;
-		printf("Subtraction:%d\n",(*p)(x,y));}
+		printf("Subtraction:%d\n",p(x,y));}
 	else if(c=='*'){
 		p=mul;
 		printf("Multiplication:%d\n",p(x,y));

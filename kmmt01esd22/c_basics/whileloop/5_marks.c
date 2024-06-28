@@ -1,4 +1,4 @@
-/*Read the marks for 6 subjects for n students( number of students is input) , and find their percentage and print their grade according to below grading:
+/*5. Read the marks for 6 subjects for n students( number of students is input) , and find their percentage and print their grade according to below grading:
   80 - 100        : Honours
   60 - 79         : First Division
   50 - 59         : Second Division
@@ -15,7 +15,7 @@ int main()
 	i=1;
 	while(i<=n)
 	{
-		printf("enter the marks:\n");
+		printf("enter student %d marks:\n",i);
 		scanf("%d%d%d%d%d%d",&t,&h,&e,&m,&p,&s);
 		sum=t+h+e+m+p+s;
 		per=(float)(sum*100)/600;

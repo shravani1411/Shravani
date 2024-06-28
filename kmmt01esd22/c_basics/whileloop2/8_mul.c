@@ -1,18 +1,18 @@
-/*Write a program to multiply 2 numbers without using + operator.*/
+/*8. Write a program to multiply 2 numbers without using * operator.*/
 
 #include <stdio.h>
 
 int main()
 {
-	int x, y;
+	int n, b;
 	int product = 0; 
 	printf("Enter two integers:\n");
-	scanf("%d%d", &x, &y);
-	while(y != 0)
+	scanf("%d%d",&n,&b);
+	while(b != 0)
 	{
-		product += x;
-		y--;
+		product += n;
+		b--;
 	}
-	printf("\nProuduct = %d\n", product);
+	printf("Prouduct = %d\n", product);
 	return 0;
 }

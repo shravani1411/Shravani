@@ -6,7 +6,7 @@ int main()
 	int a,b,c,d;
 	printf("enter a,b,c&d values:\n");
 	scanf("%d%d%d%d",&a,&b,&c,&d);
-	if(a>b&&a>c)
+	if(a>b&&a>c&&a>d)
 	{
 		printf("%d is bigger\n",a);
 	}
@@ -16,7 +16,7 @@ int main()
 	}
 	else if(c>d)
 	{
-		if(d>a)
+//		if(d>a)
 			printf("%d is bigger\n",c);
 	}
 	else

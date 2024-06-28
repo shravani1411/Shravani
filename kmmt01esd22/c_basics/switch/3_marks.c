@@ -1,4 +1,4 @@
-/*Extend the percentage marks program to print the grade of the student as per below division , using switch statement.
+/*3. Extend the percentage marks program to print the grade of the student as per below division , using switch statement.
 
   80 - 100        : Honours
 

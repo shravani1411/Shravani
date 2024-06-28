@@ -1,4 +1,4 @@
-/*)"Write a function to determine if a character is alphanumeric or not and print the result in main function.
+/*6. "Write a function to determine if a character is alphanumeric or not and print the result in main function.
 Hint: int fun_alpha_num(char c)"*/
 
 #include<stdio.h>
@@ -6,13 +6,14 @@ char fun_alpha_num(char c)
 {
 	char x;
 	if((c>96&&c<123)||(c>64&&c<91))
-		x=1;
+		return 1;	//x=1;
 	else if(c>47&&c<58)
-		x=0;
+		return 0;	//x=0;
 	else
-		x=2;
-	return x;
+		return 2;	//x=2;
+	//return x;
 }
+
 int main()
 {
 

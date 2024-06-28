@@ -13,7 +13,7 @@
 #include<stdio.h>
 int main()
 {
-	int i,j,n=5,k;
+	int i,j,n=9,k;
 	for(i=n;i>=1;i--)
 	{
 		for(j=1;j<=i-1;j++)
@@ -26,7 +26,7 @@ int main()
 		}
 		printf("\n");
 	}
-	n=4;
+	n=8;
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=i;j++)

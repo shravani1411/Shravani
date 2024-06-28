@@ -1,4 +1,4 @@
-/*read the dates of birth of n students, print the date in a changed format and print a message when the date of birth belongs to a leap year.
+/*10. read the dates of birth of n students, print the date in a changed format and print a message when the date of birth belongs to a leap year.
 
   eg.,
   input number of students: 3
@@ -18,12 +18,12 @@ int main()
 {
 	int d,m,y,i,x;
 	i=1;
-	printf("Enter no.of Inputs:");
+	printf("Enter no.of students:");
 	scanf("%d",&x);
 	while(i<=x)
 	{
 		printf("enter student%d DOB:\n",i); 
-		scanf("%d%d%d",&d,&m,&y);
+		scanf("%d-%d-%d",&d,&m,&y);
 		if(m==1)
 			printf("%d-january-%d\n",d,y);
 		else if(m==2)

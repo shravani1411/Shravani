@@ -1,4 +1,4 @@
-/*Read a character and print if it is vowel or not.*/
+/*Read a character and print if it is vowel or not using conditional & logical operators.*/
 
 #include<stdio.h>
 int main()

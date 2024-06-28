@@ -1,4 +1,4 @@
-/*Read n number of characters as input, and print if each character is alphabet or not.*/
+/*9. Read n number of characters as input, and print if each character is alphabet or not.*/
 
 #include<stdio.h>
 int main()

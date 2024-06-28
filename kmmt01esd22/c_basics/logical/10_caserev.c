@@ -1,4 +1,4 @@
-/*input an alphabet. Output its case reverse.
+/*input an alphabet. Output its case reverse using conditional & logical operators.
 
   eg., input: a
 output: A

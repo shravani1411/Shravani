@@ -1,4 +1,4 @@
-/*Write a function to accept a date and return 1 if the date is valid, 0 if it is not valid.*/
+/*11. Write a function to accept a date and return 1 if the date is valid, 0 if it is not valid.*/
 
 #include<stdio.h>
 int fun_isdate(int d, int m, int y)

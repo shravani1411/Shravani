@@ -1,4 +1,4 @@
-/*Write a function to accept two dates as input arguments, and return 1 if the first date is older, 0 if the second date is older.*/
+/*9. Write a function to accept two dates as input arguments, and return 1 if the first date is older, 0 if the second date is older.*/
 
 #include<stdio.h>
 int validate(int f,int g,int h)
@@ -59,6 +59,7 @@ int validate(int f,int g,int h)
 		default: return 0;
 	}
 }
+
 int older( int d1,int m1,int y1,int d2,int m2,int y2)
 {
 	if(y1<=y2)

@@ -1,4 +1,4 @@
-/*C program to check whether a character is vowel or consonant using switch statement*/
+/*1. C program to check whether a character is vowel or consonant using switch statement*/
 
 #include<stdio.h>
 int main()

@@ -1,4 +1,4 @@
-/*Read a set of n numbers (n is input) and print if each given number is smaller or bigger than the previous number. For first number there will not be any output as there is no previous number.
+/*6. Read a set of n numbers (n is input) and print if each given number is smaller or bigger than the previous number. For first number there will not be any output as there is no previous number.
 eg., input number of values: 5
 enter 1st value: 6
 enter 2nd value: 7
@@ -25,9 +25,9 @@ int main()
 		printf("enter the value %d:",i);
 		scanf("%d",&a);
 		if(a>b)
-			printf("%d is bigger than:%d\n",a,b);
+			printf("%d is bigger than%d\n",a,b);
 		else if(a<b)
-			printf("%d is smaller than:%d\n",a,b);
+			printf("%d is smaller than%d\n",a,b);
 		else
 			printf("it is equal\n");
 		b=a;
@@ -35,3 +35,4 @@ int main()
 	}
 	         return 0;
 }
+

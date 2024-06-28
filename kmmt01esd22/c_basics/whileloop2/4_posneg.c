@@ -1,4 +1,4 @@
-/*Read n values entered by the user, and print the sum of positive numbers and negative numbers separately.*/
+/*4. Read n values entered by the user, and print the sum of positive numbers and negative numbers separately.*/
 
 #include<stdio.h>
 int main()
@@ -14,7 +14,7 @@ int main()
 		{
 			P_Sum = P_Sum + v;
 		}
-		else if(v<0)
+		else
 		{
 			N_Sum = N_Sum + v;
 		}

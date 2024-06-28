@@ -1,5 +1,7 @@
-/*Write a program to print all numbers from 1 to a given number.*/
+/*1. Write a program to print all numbers from 1 to a given number.*/
+
 #include<stdio.h>
+
 int main()
 {
 	int i,n;

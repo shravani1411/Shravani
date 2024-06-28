@@ -1,4 +1,4 @@
-/*Read a set of n numbers only in ascending order. While reading the numbers, if the user enters a bigger number than previous number, then continue to next number. If the number is smaller than previous number, then do not count it, and take input again.
+/*7. Read a set of n numbers only in ascending order. While reading the numbers, if the user enters a bigger number than previous number, then continue to next number. If the number is smaller than previous number, then do not count it, and take input again.
 
 eg., number of values: 5
 enter 1st value: 7
@@ -22,13 +22,13 @@ int main()
 	scanf("%d",&n);
 	if(n>0)
 	{
-		printf("enter the value1:");
-		scanf("%d",&b);
+		printf("enter the value 1:");
+		scanf("%d",&a);
 		i=2;
 	}
 	while(i<=n)
 	{
-		printf("enter value %d:",i);
+		printf("enter the value %d:",i);
 		scanf("%d",&a);
 		if(a>b)
 		{
@@ -40,3 +40,4 @@ int main()
 	}
 	printf("thank you for successful inputs\n");
 }
+

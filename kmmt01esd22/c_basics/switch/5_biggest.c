@@ -1,4 +1,4 @@
-/*C program to check whether a number is odd or even using switch statement*/
+/*5. C program to check whether a number is odd or even using switch statement*/
 
 #include<stdio.h>
 int main()

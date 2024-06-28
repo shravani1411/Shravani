@@ -1,4 +1,4 @@
-/*Write the calculator program using switch case statement.*/
+/*2. Write the calculator program using switch case statement.*/
 
 #include<stdio.h>
 int main()

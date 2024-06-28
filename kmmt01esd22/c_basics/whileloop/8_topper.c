@@ -1,14 +1,14 @@
-/*Modify the 5th program, to print the topper name after reading all students marks. no need to print grade for each student this time.*/
+/*8. Modify the 5th program, to print the topper name after reading all students marks. no need to print grade for each student this time.*/
 
 #include<stdio.h>
 int main()
 {
 	int i,n;
-	printf("Enter no.of inputs\n");
+	printf("Enter no.of students:");
 	scanf("%d",&n);
 	i=2;
 	int s1,s2,s3,s4,s5,s6,t,p,c,m;
-	printf("Enter 6 subject marks of person 1:");
+	printf("Enter 6 subject marks of person 1:\n");
 	scanf("%d%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5,&s6);
 	t = s1+s2+s3+s4+s5+s6;
 	p=t;

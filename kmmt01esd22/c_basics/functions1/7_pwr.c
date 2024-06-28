@@ -1,22 +1,22 @@
-/*Write a function that takes two numbers, a and n as input arguments and returns the value of a to the power of n.*/
+/*7. Write a function that takes two numbers, a and n as input arguments and returns the value of a to the power of n.*/
 
 #include<stdio.h>
-int power(int n,int a)
+int power(int b,int p)
 {
-	int p=1,i;
-	for(i=1;i<=n;i++){
-		p=a*p;
+	int n=1,i;
+	for(i=1;i<=p;i++){
+		n*=b;
 
 	}
-	return p;
+	return n;
 }
 
 int main()
 {
-	int a,n,x;
-	printf("enter the values:\n");
-	scanf("%d\n%d",&a,&n);
-	x=power(n,a);
+	int b,p,x;
+	printf("enter base & power:\n");
+	scanf("%d\n%d",&b,&p);
+	x=power(b,p);
 	printf("%d\n",x);
 }
 

@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"1_header.h"
+
 std *creatnode()
 {
 	std *new = (std *)malloc(sizeof(std));
