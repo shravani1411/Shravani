@@ -1,12 +1,12 @@
-/*Create the operand variables as global variables( 2 numbers) and use them in the operation functions (add, mul, sub, div) directly, without passing as arguments. Function returns the result as return value.*/
+/*1. Create the operand variables as global variables( 2 numbers) and use them in the operation functions (add, mul, sub, div) directly, without passing as arguments. Function returns the result as return value.*/
 
 #include<stdio.h>
+
 int a,b;
+
 int addition(void)
 {
-	int add;
-	add=a+b;
-	return add;
+	return a+b;
 }
 
 int subtraction(void)

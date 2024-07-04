@@ -1,4 +1,4 @@
-/*Write a program to swap two arrays in reverse order.
+/*9. Write a program to swap two arrays in reverse order.
 array1 : {1,2,3,4,5}
 array2: {6,7,8,9,10}
 
@@ -25,19 +25,21 @@ int main()
 	{
 		scanf("%d",&arr2[j]);
 	}
-	for(i=n-1,j=0;j>=0&&j<n;i--,j++)
-
+	for(i=n-1,j=0;j<n;i--,j++)
 	{
 		temp=arr1[i];
 		arr1[i]=arr2[j];
 		arr2[j]=temp;
 	}
+	printf("\nreversed elements of array 2 in array 1:\n");
 	for(i=0;i<n;i++)
 	{
-		printf("reverse of array1 is %d\n",arr1[i]);
+		printf("%d\t",arr1[i]);
 	}
+	printf("\nreversed elements of array 1 in array 2:\n");
 	for(j=0;j<n;j++)
 	{
-		printf("reverse of array2 is %d\n",arr2[j]);
+		printf("%d\t",arr2[j]);
 	}
+	printf("\n");
 }

@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 void mystrreplace(char s[],char c1,char c2)

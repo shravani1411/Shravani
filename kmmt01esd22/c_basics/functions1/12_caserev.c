@@ -1,4 +1,4 @@
-/*"Write a function to accept a character as input, return case reverse of the character.
+/*12. "Write a function to accept a character as input, return case reverse of the character.
   char CaseReverse(char );"*/
 
 #include<stdio.h>

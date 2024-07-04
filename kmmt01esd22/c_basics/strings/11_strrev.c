@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 void mystrrev(char s[],int n);
@@ -9,27 +10,28 @@ int main()
 	char s[n];
 	printf("enter the character:\n");
 	scanf("%s",s);
-/*	for(i=0;i<n;i++)
-	{
+	/*	for(i=0;i<n;i++)
+		{
 	//	getchar();
-		scanf(" %[^\n]c",&s[i]);
+	scanf(" %[^\n]c",&s[i]);
 	}*/
-mystrrev(s,n);
-printf("reverse:\n");
-for(i=0;i<n;i++)
-{
-printf("%c\n",s[i]);
-}
+	mystrrev(s,n);
+	printf("reverse:\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%c",s[i]);
+	}
+	printf("\n");
 }
 
-	void mystrrev(char s[],int n)
+void mystrrev(char s[],int n)
+{
+	int i,j,temp;
+	for(i=n-1,j=0;i>=0&&j<n/2;i--,j++)
 	{
-		int i,j,temp;
-		for(i=n-1,j=0;i>=0&&j<n/2;i--,j++)
-		{
-			temp=s[i];
-			s[i]=s[j];
-			s[j]=temp;
-		}
+		temp=s[i];
+		s[i]=s[j];
+		s[j]=temp;
 	}
+}
 

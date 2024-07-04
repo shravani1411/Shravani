@@ -1,6 +1,7 @@
+
 #include<stdio.h>
 #include<string.h>
-void mystrcat(char d[],char s[]);
+void mystrcat(char s[],char d[]);
 int main()
 {
 	char s[100];
@@ -9,16 +10,16 @@ int main()
 	char d[100];
 	printf("Enter the string variable:\n");
 	scanf("%s",d);	
-	mystrcat(d,s);
-	printf("%s\n",d);
+	mystrcat(s,d);
+	printf("%s\n",s);
 }
 
-void mystrcat(char d[],char s[])
+void mystrcat(char s[],char d[])
 {
 	int i,j;
-	for(i=0;d[i]!=0;i++);
-	for(j=0;s[j]!=0;j++,i++){
-		d[i]=s[j];
+	for(i=0;s[i]!=0;i++);
+	for(j=0;d[j]!=0;j++,i++){
+		s[i]=d[j];
 	}
 }
 

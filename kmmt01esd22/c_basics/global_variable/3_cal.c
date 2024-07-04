@@ -1,4 +1,4 @@
-/*send operand variables to operation functions as arguments. store the output from operation functions in a global variable. print the value in main function.*/
+/*3. send operand variables to operation functions as arguments. store the output from operation functions in a global variable. print the value in main function.*/
 
 #include<stdio.h>
 int c;
@@ -29,14 +29,9 @@ void module(int a,int b)
 	c=a%b;
 }
 
-void addition(int a,int b);
-void subtraction(int a,int b);
-void multiplication(int a,int b);
-void division(int a,int b);
-void module(int a,int b);
 int main()
 {
-int a,b;
+	int a,b;
 	char ch;
 	printf("enter a & b values:\n");
 	scanf("%d%d",&a,&b);

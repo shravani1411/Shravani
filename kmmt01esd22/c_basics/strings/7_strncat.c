@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 void mystrncat(char s[],char d[],int n)

@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 int num(char s[]);
 int main()
@@ -12,18 +13,16 @@ int main()
 
 int num(char s[])
 {
-	int i=1,n=0,c=0,d;
-	for(n=0;s[n]!=0;n++);
-	for(n=n-1;n>=0;n--)
+	int i,n=1,c=0,d;
+	for(i=0;s[i]!=0;i++);
+	for(i=i-1;i>=0;i--)
 	{
-		if(s[n]>47&&s[n]<58)
+		if(s[i]>=48&&s[i]<=57)
 		{
-			d=s[n]-48;
-			c=c+(d*i);
-			//i=i*10;
+			d=s[i]-48;
+			c=c+(d*n);
 		}
-			i=i*10;
-
+			n=n*10;
 	}
 	return c;
 }	

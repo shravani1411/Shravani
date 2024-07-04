@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 void mystrcpy(char d[],char s[])
@@ -13,7 +14,7 @@ void mystrcpy(char d[],char s[])
 
 int main()
 {
-	char d[100]="";
+	char d[100];
 	char s[100]="kernel";
 	mystrcpy(d,s);
 	printf("%s\n",d);

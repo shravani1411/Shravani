@@ -1,4 +1,4 @@
-/*Write a function to return the product of two numbers without using * operator.*/
+/*13. Write a function to return the product of two numbers without using * operator.*/
 
 #include<stdio.h>
 int product(int x,int y)
@@ -9,11 +9,11 @@ int product(int x,int y)
 	while(b!=0)
 	{
 		p+=a;
-b--;
+		b--;
 	}
 	return p;
 }
-      
+
 int main()
 {
 	int m,x,y;

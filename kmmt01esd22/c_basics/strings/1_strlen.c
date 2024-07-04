@@ -1,5 +1,8 @@
+//1. string copy
+
 #include<stdio.h>
 #include<string.h>
+
 int mystrlen(char str[])
 {
 	int i=0;

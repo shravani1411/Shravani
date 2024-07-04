@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 int stringicmp(char s1[],char s2[]);

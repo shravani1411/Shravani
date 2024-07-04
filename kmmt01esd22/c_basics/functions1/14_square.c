@@ -1,4 +1,4 @@
-/*Write a function to take a number and return its square, without using * operator.*/
+/*14. Write a function to take a number and return its square, without using * operator.*/
 
 #include<stdio.h>
 int square(int a)
@@ -7,7 +7,7 @@ int square(int a)
 	while(b!=0)
 	{
 		c=c+a;
-		--b;
+		b--;
 	}
 	return c;
 }

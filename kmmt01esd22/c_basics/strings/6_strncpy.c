@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<string.h>
 void mystrncpy(char d[],char s[],int n)

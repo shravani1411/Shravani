@@ -1,4 +1,4 @@
-/*Write a program to print an integer in binary format.
+/*8. Write a program to print an integer in binary format.
   eg., input : 17
 output :   10001 */
 

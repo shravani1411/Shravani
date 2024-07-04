@@ -1,4 +1,4 @@
-/*Declare an array of size 10. Enter 10 elements and save them in the array. Print the array . Find out the biggest and smallest numbers and print the biggest number and its position in the array, smallest number and its position in the array. Find both using a single loop.*/
+/*3. Declare an array of size 10. Enter 10 elements and save them in the array. Print the array . Find out the biggest and smallest numbers and print the biggest number and its position in the array, smallest number and its position in the array. Find both using a single loop.*/
 
 #include<stdio.h>
 int main()

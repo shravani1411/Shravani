@@ -1,4 +1,4 @@
-/*Write a program to swap two arrays in reverse order.
+/*9. Write a program to swap two arrays in reverse order.
 array1 : {1,2,3,4,5}
 array2: {6,7,8,9,10}
 
@@ -7,7 +7,8 @@ after swapping output should be as below:
 array1 : { 10,9,8,7,6}
 array2: { 5,4,3,2,1}*/
 
-#include"swap.h"
+#include<stdio.h>
+#include"9_swap.h"
 int main()
 {
 	int n,i,j;

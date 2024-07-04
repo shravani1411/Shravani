@@ -1,7 +1,9 @@
-/*Create the operand variables as global variables and use them in the operation functions directly, without passing as arguments. Function return value should be stored in another global variable and be printed in main.*/
+/*2. Create the operand variables as global variables and use them in the operation functions directly, without passing as arguments. Function return value should be stored in another global variable and be printed in main.*/
 
 #include<stdio.h>
+
 int a,b,c;
+
 void addition()
 {
 
